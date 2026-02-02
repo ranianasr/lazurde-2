@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحة الدفع</title>
+    <link rel="stylesheet" href="دفع.css">
+</head>
+<body>
+
+<div class="checkout-container">
+    <div class="steps-section">
+        
+        <div class="step-box">
+            <div class="step-header">
+                <span class="step-number">1</span>
+                <h3>العميل</h3>
+            </div>
+            <div class="step-content">
+                <input type="email" placeholder="البريد الإلكتروني">
+                <button class="btn-black">المتابعة للشحن</button>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <input type="checkbox" id="toggle-shipping" class="toggle-input">
+            <label for="toggle-shipping" class="step-header clickable">
+                <span class="step-number">2</span>
+                <h3>الشحن</h3>
+            </label>
+            
+            <div class="step-content collapsible">
+                <div class="form-row">
+                    <input type="text" placeholder="الاسم الأول">
+                    <input type="text" placeholder="الاسم الأخير">
+                </div>
+                <input type="text" placeholder="اسم الشركة (اختياري)">
+                <input type="text" placeholder="رقم الهاتف">
+                <input type="text" placeholder="العنوان">
+                <input type="text" placeholder="شقة، جناح، إلخ (اختياري)">
+                <select>
+                    <option>الدولة (مصر)</option>
+                </select>
+                <button class="btn-black">متابعة الدفع</button>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-header">
+                <span class="step-number">3</span>
+                <h3>الدفع</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="summary-section">
+        <div class="summary-card">
+            <h3>ملخص الطلب</h3>
+            <div class="product-info">
+                <img src="hh1.jpg" alt="product">
+                <div class="product-text-details">
+                <p class="product-title">سلسلة شكل مربعات متداخلة ذهب عيار 18 قيراط مزينة بالألماس</p>
+                <span class="price">EGP 38,280</span>
+                <span class="quantity">الكمية: 1</span>
+                </div>
+                </div>
+            </div>
+        
+            <hr>
+            <div class="summary-row">
+                <span>الإجمالي الفرعي</span>
+                <span>EGP 38,280</span>
+            </div>
+            <div class="summary-row discount">
+                <span>لقد وفرت</span>
+                <span>-EGP 9,570</span>
+            </div>
+            <div class="summary-row">
+                <span>رسوم التوصيل</span>
+                <span>---</span>
+            </div>
+            <div class="summary-row">
+                <span>رسوم التوصيل</span>
+                <span>---</span>
+            </div>
+            
+            <div class="summary-row">
+                <span>مصاريف التحصيل</span>
+                <span>EGP 0</span>
+            </div>
+            
+            <div class="coupon-section">
+                <label>قسيمة شراء، كود خصم</label>
+                <div class="coupon-controls">
+                    <input type="text" class="coupon-input">
+                    <button class="btn-black">تفعيل</button>
+            
+                </div>
+            </div>
+            <hr>
+            <div class="summary-row total">
+                <span>إجمالي قيمة الطلب</span>
+                <span>EGP 38,280</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
