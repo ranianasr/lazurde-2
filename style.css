@@ -1,0 +1,389 @@
+
+/* Header Styles */
+.header {
+  background: #000000;
+  box-shadow: 0 2px 10px  beige ;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20px;
+}
+
+.nav-brand h1 {
+  color: #d4af37;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+  color: #ffffff;
+}
+
+.nav-icons i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3;
+}
+
+.nav-icons i:hover {
+  color: #d4af37;
+}
+/*end navbar*/
+body {
+    margin: 0;
+}
+
+/* start Hero */
+.hero {
+    height: 100vh;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.hero-text {
+    position: absolute;
+    right: 2%;
+    bottom: 7%;
+    justify-items: end;
+    color: antiquewhite;
+    margin-right: 7%;
+
+}
+
+.hero-text h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+
+}
+
+.btn {
+    background-color: #2f8f6b;
+    margin-bottom: 80%;
+}
+
+/* End Hero */
+
+
+/* start card */
+.card {
+    transition: .3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.container-row {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}
+
+/* End card */
+/*section*/
+.parent {
+    background-color: rgba(239, 239, 238, 0.921);
+    display: flex;
+    gap: 10px;
+}
+
+.child {
+    width: 24%;
+}
+
+.child img {
+    width: 100%;
+}
+
+.rating {
+    color: #ffd700;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+.price-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.current-price {
+    color: #e02b7f;
+    font-weight: bold;
+}
+
+.discount {
+    font-size: 14px;
+    color: #666;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #000;
+    font-size: 14px;
+}
+
+.parent {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    direction: rtl;
+}
+
+.child {
+    flex: 0 0 calc(20% - 20px);
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.child img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+categories-container {
+    display: flex;
+    gap: 15px;
+    padding: 40px 20px;
+    direction: rtl;
+    flex-wrap: nowrap;
+}
+
+.category-card {
+    flex: 1;
+    position: relative;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.category-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+}
+
+.shop-btn {
+    color: #000;
+    font-weight: bold;
+}
+
+.category-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: normal;
+}
+
+
+.shop-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #333;
+}
+
+.child {
+    position: relative;
+}
+
+.add-to-cart-btn {
+    position: absolute;
+    top: 220px;
+    left: 25px;
+
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+    padding: 10px;
+}
+
+.child h3,
+.child .brand-name {
+    margin: 2px 0;
+    line-height: 1.2;
+    display: block;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.child p {
+    font-size: 22px !important;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+.category-card {
+    font-family: 'Cairo', sans-serif;
+
+
+    direction: rtl;
+}
+
+
+.category-label {
+    font-weight: 900;
+    font-size: 26px;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.category-content h3 {
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+
+.shop-btn {
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*end section*/
+/* start footer*/
+.subscribe-section {
+    background-color: #141010;
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.subscribe-box,
+.social-box {
+    width: 15%;
+    text-align: center;
+}
+
+
+.subscribe-box h2 {
+    font-size: 90px;
+    margin-bottom: 15px;
+}
+
+.subscribe-box p {
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    background: #ffffff;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons i {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.youtube{
+    cursor: pointer;
+}
+.twitter{
+    cursor: pointer;
+}
+.pinterest{
+    cursor: pointer;
+}
+.instgram{
+    cursor: pointer;
+}
+.facebook{
+    cursor: pointer;
+}
+/* end footer */
