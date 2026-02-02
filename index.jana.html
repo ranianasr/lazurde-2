@@ -1,80 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <!-- google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Science+Gothic:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-
-
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--Link CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> lazurde </title>
+  <link rel="stylesheet" href="p .css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <!--start navbar-->
-<!--<div class="navbar">
-        <div class="container">
-            <div class="navbar-icons">
-                <span><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
-                <span>
-                    <h1>|</h1>
-                </span>
-                <span><i class="fa fa-heart" aria-hidden="true"></i></span>
-                <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                <span><i class="fa-solid fa-globe"></i></span>
-                <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-            </div>
-
-            <div class="namepage">
-                <span class="name-page">
-                    <h6>MISSL</h6>
-                </span>
-                <span class="name-page">
-                    <h6>L`AZURDE</h6>
-                </span>
-
-            </div>
-        </div>
-
-
-        <div class="nav-search">
-            <divclass="glass"> <i class="fa-solid fa-magnifying-glass"></i></div>
-            <div class="lazurde">
-                <h1>L`AZURDE</h1>
-            </div>
-        </div>
-        <div class="links">
-            <ul class="list">
-                <li><a href="">تسوقوا كل المجوهرات</a></li>
-                <li><a href="">هدايا ومناسبات</a></li>
-                <li><a href="">زفاف وخطوبه</a></li>
-                <li><a href="">مجموعه المجوهرات الفضيه</a></li>
-                <li><a href="">مجوهرات عصريه</a></li>
-                <li><a href="">ذهب</a></li>
-                <li><a href="">ألماس</a></li>
-                <li><a href="">تخفيضات الشتاء</a></li>
-            </ul>
-        </div>
-    </div>
---> 
-    <!--end navbar-->
-      <!-- Header -->
-    <!-- Header -->
+  <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="nav-brand">
@@ -89,343 +24,328 @@
     </div>
   </header>
 
-    <!-- start Hero-->
-   <section class="hero" id="hero">
-        <img src="img/hero.jpeg">
-        <div class="hero-text">
-            <p class=" fs-1 mb-0 ">A touch of elegance</p>
-            <h1 class=" fw-bold ">Women's accessories </h1>
-            <div class="btns d-flex flex-wrap gap-4 ">
-                <a class="btn btn-success fs-5 rounded-4 py-2 text-nowrap">Shop Now</a>
-            </div>
+  <!-- Filters Section -->
+  <section class="filters-section">
+    <div class="container">
+      <div class="filters">
+        <div class="filter-group">
+          <label>الفئة:</label>
+          <select id="categoryFilter">
+            <option value="">جميع الفئات</option>
+            <option value="rings">خواتم</option>
+            <option value="necklaces">قلائد</option>
+            <option value="earrings">أقراط</option>
+            <option value="bracelets">أساور</option>
+          </select>
         </div>
+        <div class="filter-group">
+          <label>السعر:</label>
+          <select id="priceFilter">
+            <option value="">جميع الأسعار</option>
+            <option value="0-1000">أقل من 1000 </option>
+            <option value="1000-3000">1000 - 3000 </option>
+            <option value="3000-5000">3000 - 5000 </option>
+            <option value="5000+">أكثر من 5000 </option>
+          </select>
         </div>
-    </section>
-    <!--End Hero-->
-
-    <!-- Start Section 1-->
-    <section>
-        <div class="catagories py-5" id="catagories">
-            <div class="container">
-                <p class="text-center text-danger mb-0">The latest accessories with designs and intricate details to
-                    suit all tastes.</p>
-                <h2 class="text-center fs-1 fw-bold">New Arrival</h2>
-                <div class="row mt-1 g-5">
-
-
-
-                    <div class=" col-sm-12 col-md-6 col-lg-3">
-                        <div class="card shadow p-4  ">
-                            <div><img class="img-fluid" src="img/WhatsApp Image 2026-01-30 at 1.41.03 AM.jpeg" alt="">
-                            </div>
-                            <div class="content text-center">
-                                <h5 class="text-start mt-3 text-muted">
-                                    Medusa Store Luxury Gold Tulip Bracelet with Crystals,
-                                    Wave Design with Tulip Rose Stones for Women
-                                </h5>
-                                <p class="fw-bold"> EGP 2,250,000 </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-sm-12 col-md-6 col-lg-3">
-                        <div class="card shadow p-3">
-                            <div><img class="img-fluid bg-danger" src="img/img.jpeg" alt=""></div>
-
-                            <div class="content text-center">
-                                <h5 class="text-start  text-muted mt-2">
-                                    Stor 18k Plated Stainless Steel Love Trendy Luxury
-                                    Lucky Five Leaf Link Clover Rose Flower Bracelet for Women
-
-                                </h5>
-                                <p class="fw-bold"> EGP 1,900,000 </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-sm-12 col-md-6 col-lg-3">
-                        <div class="card shadow p-4 ">
-                            <div><img class="img-fluid bg-danger" src="img/img2.jpeg" alt=""></div>
-
-                            <div class="content text-center">
-                                <h5 class="text-start mt-2 text-muted">
-                                    Luxury Lucky Five Leaf Link Clover Rose Flower
-                                    Bracelet for Women Bracelets Jewelry Gifts for Women
-                                </h5>
-                                <p class="fw-bold"> EGP 1,340,000 </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-sm-12 col-md-6 col-lg-3">
-                        <div class="card shadow p-4 ">
-                            <div><img class="img-fluid bg-danger" src="img/img3.jpeg" alt=""></div>
-
-                            <div class="content text-center">
-                                <h5 class="text-start mt-2 text-muted">
-                                    Cleopatra Simple Gold Necklace Cute Tiny 18k Gold Plated
-                                    sun necklace -Trendy Jewelry Gifts for Girls
-                                </h5>
-                                <p class="fw-bold"> EGP 1,400,000 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="filter-group">
+          <label>عيار الذهب:</label>
+          <select id="karatFilter">
+            <option value="">جميع العيارات</option>
+            <option value="18k">18 قيراط</option>
+            <option value="21k">21 قيراط</option>
+            <option value="22k">22 قيراط</option>
+          </select>
         </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-    <!-- start-section 2-->
-       <h2 class="section-title"> وصل حديثا</h2><div class="img-top">
-        <div class="parent">
-            <!-- Product 1 -->
-            <div class="child">
-                <img src="img/ph10.jpeg" alt="">
-                <span class="brand-name">لازوردي</span>
-                <h3>سلسلة شكل مربعين متداخلين</h3>
-                <p>سلسلة ذهب عيار 18 قيراط مزينة بالألماس</p>   
-                <div class="rating">☆☆☆☆☆</div>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="البحث عن المنتجات...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="price-container">
-                    <span class="current-price">EGP 38,280</span>
-                    <span class="discount">-20%</span>
-                    <span class="old-price">EGP 47,850</span>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="child">
-                <img src="img/ph2.jpeg" alt="">
-                <span class="brand-name">لازوردي</span>
-                <h3>اسواره بسلسله شكل مربعين متداخلين</h3>
-                <p>ذهب عيار 18 قيراط</p>
-                <p></p>
-                <p></p><p></p>
-                <div class="rating">☆☆☆☆☆</div>
-
-                <div class="price-container">
-                    <span class="current-price">EGP 29,835</span>
-                    <span class="discount">-20%</span>
-                    <span class="old-price">EGP 37,290</span>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="child">
-                <img src="img/ph3.jpeg" alt="">
-                <span class="brand-name">لازوردي</span>
-                <h3>خاتم مربعين متداخلين</h3>
-                <p>ذهب عيار 18 قيراط</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p><p></p><p></p>
-                <div class="rating">☆☆☆☆☆</div>
-
-                <div class="price-container">
-                    <span class="current-price">EGP 38,195</span>
-                    <span class="discount">-20%</span>
-                    <span class="old-price">EGP 47,740</span>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="child">
-                <img src="img/ph4.jpeg" alt="">
-                <span class="brand-name">لازوردي</span>
-                <h3>أقراط صغيرة</h3>
-                <p>ذهب عيار 18 قيراط</p>
-                <p></p><p></p><p></p><p></p><p></p><p></p>
-                <div class="rating">☆☆☆☆☆</div>
-
-                <div class="price-container">
-                    <span class="current-price">EGP 48,095</span>
-                    <span class="discount">-20%</span>
-                    <span class="old-price">EGP 60,115</span>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="child">
-                <img src="img/ph5.jpeg" alt="">
-                <span class="brand-name">لازوردي</span>
-                <h4>خاتم بايباس شكل مربعين متداخلين وقطرة ذهب عيار 18 قيراط مزين بالألماس وحجر أخضر</h4>
-                <p></p><p></p>
-                <div class="rating">☆☆☆☆☆</div>
-
-                <div class="price-container">
-                    <span class="current-price">EGP 39,295</span>
-                    <span class="discount">-20%</span>
-                    <span class="old-price">EGP 49,115</span>
-                </div>
-
-            </div>
+  <!-- Products Section -->
+  <section class="products-section">
+    <div class="container">
+      <h2 class="section-title">مجوهرات ذهب </h2>
+      <!-- Products Grid -->
+    <div class="products-grid">
+      <!-- Product 1 -->
+      <div class="product-card" data-id="1">
+        <div class="product-image">
+          <span class="badge">جديد</span>
         
-    
-            
-            <div class="categories-container">
-                <div class="category-card">
-                    <img src="img/الماس.jpeg" alt="ألماس">
-                    <div class="category-content">
-                        <span class="category-label"> الماس</span>
-                        <h3>المجوهرات الماسية لإطلالة تشعّ بالبريق</h3>
-                        <a href="#" class="shop-btn">تسوقوا المجموعات</a>
-                    </div>
-                </div>
-            </div>
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop" alt="أسورة بسلسلة منقوشة ذهب عيار 18 قيراط" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">أسورة بسلسلة منقوشة ذهب عيار 18 قيراط</h3>
+          <span class="product-price">EGP 42,960</span> 
+                   <button class="add-to-cart-btn">أضف للسلة</button>
+  <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+        <!-- Product 2 -->
+      <div class="product-card" data-id="2">
+        <div class="product-image">
+          <span class="badge">جديد</span>
+         
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop" alt="سلسلة ذهب حلقات تبادلية عيار 18 قيراط" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">سلسلة ذهب حلقات تبادلية عيار 18 قيراط</h3>
+          <span class="product-price">EGP 97,525</span>   
+                 <button class="add-to-cart-btn">أضف للسلة</button>
+ <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
-            <div class="categories-container">
-                <div class="category-card">
-                    <img src="img/ذهب.jpeg" alt="ألماس">
-                    <div class="category-content">
-                        <span class="category-label"> دهب</span>
-                        <h3>سرّ التألق مع مجموعات الذهب</h3>
-                        <a href="#" class="shop-btn">تسوقوا المجموعات</a>
-                    </div>
-                </div>
-            </div>
+      <!-- Product 3 -->
+      <div class="product-card" data-id="3">
+        <div class="product-image">
+          <span class="badge">جديد</span>
+         
+          <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400&h=400&fit=crop" alt="نصف طقم متموج عيار 21 قيراط مزين بأحجار الزركون" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">نصف طقم متموج عيار 21 قيراط مزين بأحجار الزركون (2 قطع)</h3>
+          <span class="product-price">EGP 79,695</span>  
+                <button class="add-to-cart-btn">أضف للسلة</button>
+ <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
+      <!-- Product 4 -->
+      <div class="product-card" data-id="4">
+        <div class="product-image">
+         
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop" alt="خاتم ذهب شكل قطرة عيار 18 قيراط مزين بأحجار الزركون" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">خاتم ذهب شكل قطرة عيار 18 قيراط مزين بأحجار الزركون</h3>
+          <span class="product-price">EGP 32,900</span>  
+                  <button class="add-to-cart-btn">أضف للسلة</button>
+ <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
-            <div class="category-card">
-                <img src="img/مس ال.jpeg" alt="ألماس">
-                <div class="category-content">
-                    <span class="category-label"> مس ال</span>
-                    <h3>اللحظات السعيدة تبقى بالبال مع مس أل</h3>
-                    <a href="#" class="shop-btn">تسوقوا المجموعات</a>
-                </div>
-            </div>
+      <!-- Product 5 -->
+      <div class="product-card" data-id="5">
+        <div class="product-image">
+          <span class="badge">جديد</span>
+        
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop" alt="أسورة مفتوحة شكل قطرات ذهب عيار 18 قيراط مزينة بأحجار الزركون" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">أسورة مفتوحة شكل قطرات ذهب عيار 18 قيراط مزينة بأحجار الزركون</h3>
+          <span class="product-price">EGP 38,080</span>  
+                  <button class="add-to-cart-btn">أضف للسلة</button>
+  <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
-            <div class="category-card">
-                <img src="img/انستايل.jpeg" alt="ألماس">
-                <div class="category-content">
-                    <span class="category-label"> انسايل</span>
-                    <h3>مجوهرات الذهب والأحجار الملونة من إنستايل تواكب الموضة</h3>
-                    <a href="#" class="shop-btn">تسوقوا المجموعات</a>
-                </div>
-            </div>
+      <!-- Product 6 -->
+      <div class="product-card" data-id="6">
+        <div class="product-image">
+          <span class="badge">جديد</span>
+         
+          <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400&h=400&fit=crop" alt="أسورة مفتوحة شكل قطرة ومضاوي ذهب عيار 18 قيراط" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">أسورة مفتوحة شكل قطرة ومضاوي ذهب عيار 18 قيراط مزينة بأحجار الزركون</h3>
+          <span class="product-price">EGP 42,050</span> 
+                 <button class="add-to-cart-btn">أضف للسلة</button>
+ <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
+      <!-- Product 7 -->
+      <div class="product-card" data-id="7">
+        <div class="product-image">
+          <span class="badge">جديد</span>
+         
+          <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop" alt="أقراط صغيرة ذهب دمعة عيار 18 قيراط" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">أقراط صغيرة ذهب دمعة عيار 18 قيراط</h3>
+          <span class="product-price">EGP 18,400</span>    
+          <button class="add-to-cart-btn">أضف للسلة</button>
+ <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
-            <div class="category-card">
-                <img src="img/فضه.jpeg" alt="ألماس">
-                <div class="category-content">
-                    <span class="category-label"> مجوهرات الفضه</span>
-                    <h3>للتألّق عنوان مع مجموعة ويفز</h3>
-                    <a href="#" class="shop-btn">تسوقوا المجموعات</a>
-                </div>
-            </div>
-        </div></section>
-    
-        <div class="img-bottom">
-            <h2 class="main-title">الاكثر مبيعا</h2>
-            <div class="parent">
-
-
-                <!-- Product 6 -->
-                <div class="child">
-                    <img src="img/ph6.jpeg" alt="">
-                    <span class="brand-name">لازوردي</span>
-                    <h3>أسورة بسلسلة ذهب قلب</h3>
-                    <p>عيار 18 قيراط مزينة بحجر وردي</p>
-                    <div class="rating">☆☆☆☆☆</div>
-
-                    <div class="price-container">
-                        <span class="current-price">EGP 4,879</span>
-                        <span class="discount">-20%</span>
-                        <span class="old-price">EGP 6,099</span>
-                    </div>
-                </div>
-
-                <!-- Product 7 -->
-                <div class="child">
-                    <img src="img/ph7.jpeg" alt="">
-                    <span class="brand-name">لازوردي</span>
-                    <h3>أقراط متدلية ذهب دائرية </h3>
-                    <p>عيار 18 قيراط مزينة باللؤلؤ</p>
-                    <div class="rating">☆☆☆☆☆</div>
-
-                    <div class="price-container">
-                        <span class="current-price">EGP 5,519</span>
-                        <span class="discount">-20%</span>
-                        <span class="old-price">EGP 6,899</span>
-                    </div>
-                </div>
-
-                <!-- Product 8 -->
-                <div class="child">
-                    <img src="img/ph8.jpeg" alt="">
-                    <span class="brand-name">لازوردي</span>
-                    <h3>سلسلة ذهب </h3>
-                    <p>عيار 14 قيراط ماركيز مزينة بحجر أخضر</p>
-                    <div class="rating">☆☆☆☆☆</div>
-
-                    <div class="price-container">
-                        <span class="current-price">EGP 4,879</span>
-                        <span class="discount">-20%</span>
-                        <span class="old-price">EGP 6,099</span>
-                    </div>
-                </div>
-
-                <!-- Product 9 -->
-                <div class="child">
-                    <img src="img/ph9.jpeg" alt="">
-                    <span class="brand-name">لازوردي</span>
-                    <h3>سلسلة ذهب مستطيلة</h3>
-                    <p>عيار 18 قيراط مزينة بحجر أخضر</p>
-                    <div class="rating">☆☆☆☆☆</div>
-
-                    <div class="price-container">
-                        <span class="current-price">EGP 15,919</span>
-                        <span class="discount">-20%</span>
-                        <span class="old-price">EGP 19,899</span>
-                    </div>
-                </div>
-
-                <!-- Product 10 -->
-                <div class="child">
-                    <img src="img/ph10.jpeg" alt="">
-                    <span class="brand-name">لازوردي</span>
-                    <h3>دلاية ذهب حرف M </h3>
-                    <p>عيار 18 قيراط مزينة بالؤلؤ</p>
-                    <div class="rating">☆☆☆☆☆</div>
-
-                    <div class="price-container">
-                        <span class="current-price">EGP 5,839</span>
-                        <span class="discount">-20%</span>
-                        <span class="old-price">EGP 7,299</span>
-                    </div>
-                </div>
-
-            </div>
+      <!-- Product 8 -->
+      <div class="product-card" data-id="8">
+        <div class="product-image">
+          
+          <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&h=400&fit=crop" alt="نصف طقم بأشكال ماركيز ذهب عيار 18 قيراط" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">نصف طقم بأشكال ماركيز ذهب عيار 18 قيراط مزينة بأحجار الزركون (2 قطع)</h3>
+          <span class="product-price">EGP 84,095</span>    
+               <button class="add-to-cart-btn">أضف للسلة</button>
+<button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
 
         </div>
-        <!--start-footer-->
-        <section class="subscribe-section">
-            <div class="container">
+      </div>
 
-                <div class="subscribe-box">
-                    <h2>Sign up now</h2>
-                    <p>
-                        Subscribe to receive notifications about<br>
-                        the latest products, offers, and discounts
-                    </p>
-                    <button class="btn">Create Account</button>
-                </div>
+      <!-- Product 9 -->
+      <div class="product-card" data-id="9">
+        <div class="product-image">
+          <span class="badge">جديد</span>
+         
+          <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=400&h=400&fit=crop" alt="أسورة بدلايات أشكال فراشات ذهب عيار 18 قيراط" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">أسورة بدلايات أشكال فراشات ذهب عيار 18 قيراط مزينة بحجر أخضر</h3>
+          <span class="product-price">EGP 60,140</span>
+            <button class="add-to-cart-btn">أضف للسلة</button>
+ <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
-                <div class="social-box">
-                    <h3>Follow us on</h3>
-                    <div class="social-icons">
-                        <span class="youtube"> <i class="fa-brands fa-youtube"></i></span>
+      <!-- Product 10 -->
+      <div class="product-card" data-id="10">
+        <div class="product-image">
+          
+          <img src="https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=400&h=400&fit=crop" alt="خاتم ذهب مربع عيار 18 قيراط مزين بحجر أخضر" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">خاتم ذهب مربع عيار 18 قيراط مزين بحجر أخضر</h3>
+          <span class="product-price">EGP 27,400</span>
+            <button class="add-to-cart-btn">أضف للسلة</button>
+<button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card" data-id="11">
+        <div class="product-image">
+          <span class="badge">جديد</span>
+          <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=400&h=400&fit=crop" alt="خاتم ذهب زهرة عيار 18 قيراط مزين بالأحجار الملونة" />
+        </div>
+        <div class="product-info">
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">خاتم ذهب زهرة عيار 18 قيراط مزين بالأحجار الملونة</h3>
+          <span class="product-price">EGP 44,975</span>
+         <button class="add-to-cart-btn">أضف للسلة</button>
+           <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+        </button>
+        </div>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card" data-id="12">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?w=400&h=400&fit=crop" alt="طقم ذهب نمر عيار 18 قيراط مزين بحجر أخضر" />
+        </div>
+        <div class="product-info">
+            
+          <span class="product-brand">لازوردي</span>
+          <h3 class="product-title">طقم ذهب نمر عيار 18 قيراط مزين بحجر أخضر (2 قطع)</h3>
+          <span class="product-price">EGP 189,180</span> <button class="add-to-cart-btn">أضف للسلة</button>
+         <button class="wishlist-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>        
+
+        </button>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Products Count -->
+    <div class="products-count">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    
+   
+        <!-- Products will be dynamically loaded here -->
+      </div>
+      <div class="load-more">
+        <button id="loadMoreBtn">عرض المزيد</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="subscribe-section">
+  <div class="container">
+ 
+    <div class="subscribe-box">
+      <h2>Sign up now</h2>
+      <p>
+        Subscribe to receive notifications about<br>
+        the latest products, offers, and discounts
+      </p>
+      <button class="btn">Create Account</button>
+    </div>
+
+    <div class="social-box">
+         <h3>Follow us on</h3>
+                 <div span class="youtube"> <i class="fa-brands fa-youtube"></i></span>
                         <span class="twitter"> <i class="fa-brands fa-x-twitter"></i> </span>
                         <span class="pinterest"> <i class="fa-brands fa-pinterest-p"></i> </span>
                         <span class="facebook"> <i class="fa-brands fa-facebook-f"></i> </span>
                         <span class="instgram"> <i class="fa-brands fa-instagram"></i> </span>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <!--end-footer-->
-</body>
+    </div>
+  </div>
+</section>
 
+</body>
 </html>
