@@ -126,7 +126,7 @@ a {
 
 }
 /*end navbar*/
-/* strart type-product*/
+/* start type-almas*/
 body{
     background-color: rgb(255, 255, 255);
 }
@@ -153,8 +153,8 @@ body{
     margin-right: 19%;
     margin-top: 20px;
 }
-/* end type-product*/
-/*start product*/
+/* end type-almas*/
+/*start almas-page*/
 .container img{
     display: flex;
     margin-top: 50px;
@@ -212,7 +212,7 @@ justify-content: center;
     border: #000 2px solid;
     color: white;
 }
-/*end product*/
+/*end almas-page*/
 
 /*start-footer*/
 .subscribe-section {
